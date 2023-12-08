@@ -6,7 +6,8 @@ import java.util.regex.Pattern;
 
 public class ValidSentence {
     public static void main(String[] args) {
-        System.out.println(isValidSentence("Hello world!"));
+        System.out.println("Valid sentence, valid: " + isValidSentence("Hello world!"));
+        System.out.println("Invalid sentence, valid: " + isValidSentence("hello . 6 world"));
     }
 
     // Set.of() is more optimized than a hashset for a small number of elements
