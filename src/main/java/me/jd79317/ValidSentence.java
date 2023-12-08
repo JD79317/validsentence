@@ -40,8 +40,8 @@ public class ValidSentence {
             return false;
         }
 
-        String inputWithoutLastCharacter = input.substring(0, input.length() - 1);
         // Ensures string has no period characters other than the last character.
+        String inputWithoutLastCharacter = input.substring(0, input.length() - 1);
         if (inputWithoutLastCharacter.contains(".")) {
             return false;
         }
