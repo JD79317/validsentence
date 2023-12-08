@@ -88,5 +88,7 @@ public class ValidSentenceTest {
         long time = TimeUnit.NANOSECONDS.toMillis(end - start);
 
         System.out.println("containsNumberLessThan took: " + time + " ms (for " + iterations + " iterations) " + dummy);
+
+        assertTrue(time < (iterations / 10)); // ensure average check time takes under 0.1ms
     }
 }
